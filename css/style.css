@@ -1,0 +1,232 @@
+/*
+===================================
+========================================== Global
+=========================
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image:
+    url(../img/body-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.body-wrapper{
+    width: 1050px;
+    margin: 0 auto;
+}
+/*
+===================================
+========================================== Buttons
+=========================
+*/
+.form-button input{
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 0px 0px #ffffff;
+}
+.btn-large input{
+border-color:  #3b9a00;
+background-color:  #93d02b;
+width: 339px;
+height: 48px;
+margin-top: 14px;
+font-size: 23px;
+color: #fff;
+text-shadow: 1px 1px 0px #51850e;
+}
+
+.btn-medium input{
+border-color:  #3b9a00;
+box-sizing: border-box;
+background-color:  #93d02b;
+box-shadow: 0px 1px 0px 0px #ffffff;
+width: 139px;
+height: 41px;
+color: #fff;
+font-size: 23px;
+text-shadow: 1px 1px 0px #51850e;
+}
+
+.btn-small input{
+border-color:  #3b9a00;
+box-sizing: border-box;
+background-color:  #93d02b;
+width: 149px;
+height: 41px;
+color: #fff;
+font-size: 18px;
+text-shadow: 1px 1px 0px #51850e;
+}
+
+.small-red input{
+border-color:  #a2202a;
+box-sizing: border-box;
+background-color:  #f4495b;
+box-shadow: 0px 1px 0px 0px #ffffff;
+width: 149px;
+height: 41px;
+color: #fff;
+font-size: 18px;
+}
+
+/*
+===================================
+========================================== Everything Else
+=========================
+*/
+
+
+
+.forms-wrapper{
+    justify-content: space-around;
+}
+
+.main-logo{
+    max-height: 111px;
+    opacity: 0.3;
+    display: block;
+    margin: 55px auto 0;
+}
+
+.box{
+    width: 420px;
+    box-sizing: border-box;
+    margin-top: 25px;
+}
+
+.box h1 {
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    text-shadow: 1px 2px 2px rgba(43, 1, 0, 0.75);
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.form-wrapper-outline{
+    border-radius: 5px;
+    background-color:  rgba(0, 0, 0, 0.23);
+    width: 420px;
+    height: auto;
+    padding: 20px 18px;
+    box-sizing: border-box;
+}
+
+.form-wrapper{
+    border-radius: 3px;
+    background-color:  #f4f4f4;
+    box-shadow: 0px 0px 8.6px 1.4px rgba(0, 0, 0, 0.13);
+    width: 382px;
+    height: auto;
+    margin: 0 auto;
+    padding: 22px 23px;
+    box-sizing: border-box;
+}
+
+.form-field{
+    position: relative;
+}
+input{
+    font-size: 13px;
+}
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=tel],
+select{
+    height: 39px;
+    width: 338px;
+    box-sizing: border-box;
+    margin-bottom: 21px;
+    padding-left: 80px;
+    position: relative;
+
+}
+
+i{
+    position: absolute;
+    color: #afafaf;
+    font-size: 22px;
+    width: 23px;
+    top: 8px;
+    left: 16px;
+    border-right: 2px solid #afafaf;
+    padding-right: 12px;
+}
+
+textarea{
+    height: 230px;
+    width: 338px;
+    padding: 14px 0 0 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+input[placeholder],
+select{
+    color: #afafaf;
+}
+
+
+.form-checkbox{
+    position: relative;
+}
+.form-checkbox label{
+    padding-left: 38px;
+    font-size: 17px;
+    color:#afafaf;
+}
+
+input[type=checkbox]{
+    height: 24px;
+    width: 23px;
+    position: absolute;
+    top: -3px;
+}
+
+.sign-in-btns{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recovery-btns,
+.sub-btns{
+    justify-content: space-between;
+}
+
+.small-logo{
+    width: 353px;
+    height: 130px;
+    display: block;
+    margin: 51px auto 0;
+    opacity: 0.3;
+}
+
+/*
+===================================
+========================================== Media queries
+=========================
+*/
+
+@media(max-width: 1080px){
+    .forms-wrapper{
+        flex-direction: column;
+    }
+    .box{
+        margin: 25px auto 0;
+    }
+}

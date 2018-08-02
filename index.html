@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weekly Web Dev Challenge 1</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="body-wrapper">
+    <!-- Desktops layout 2 main columns -->
+    <img class="main-logo" src="img/Masteralb.png" alt="masterlab logo">
+    <div class="forms-wrapper flex-container">
+    <!-- column 1  -->
+   <div class="main-column-1"> 
+       <!-- box wraps form title and form -->
+       <!-- register form -->
+       <div class="box box-1">
+            <h1 class="form-title">register form</h1>
+            <div class="form-wrapper-outline">
+                <div class="form-wrapper">
+                    <div class="form-field user-name">
+                        <label for="userName" hidden >User name</label>
+                        <input type="text" name="userName" id="user_Name" placeholder="Username">
+                        <i class="fas fa-user"></i>
+                    </div>
+                <div class="form-field user-password">
+                    <label for="userName" hidden >Password</label>
+                    <input type="password" name="password" id="user_password" placeholder="Password" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="form-field user-password">
+                    <label for="userName" hidden >Password Confirm</label>
+                    <input type="password" name="passwordConfirm" id="user_password_confirm" placeholder="Confirm Password" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="form-field user-email">
+                    <label for="userName" hidden >Email</label>
+                    <input type="email" name="userEmail" id="user_Email" placeholder="Email">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="form-field user-location">
+                    <label for="userLocation" hidden >User Location</label>
+                    <select name="userLocation" id="user_location">
+                        <option value="Gloucester">Gloucester</option>
+                        <option value="Cheltenham">Cheltenham</option>
+                        <option value="Swindon">Swindon</option>
+                        <option value="Stroud">Stroud</option>
+                        <option value="Tewkesbury">Tewkesbury</option>
+                        <option value="Stroud">Stroud</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="form-checkbox">
+                    <input type="checkbox">
+                    <label for="formCheckbox">I have read and accept the terms of use</label>
+                    <div class="custom-checkbox-wrapper">
+                        <span class="custom-checkbox">
+                        </span>
+                    </div>
+                </div>
+                <div class="form-button btn-large">
+                    <input type="submit" value="Sign Up">
+                </div>
+                </div>
+            </div>
+       </div>
+       <!-- send email form -->
+       <div class="box box-2">
+            <h1 class="form-title">Send Email</h1>
+            <div class="form-wrapper-outline">
+                <div class="form-wrapper">
+                    <div class="form-field user-name">
+                        <label for="userName" hidden >User name</label>
+                        <input type="text" name="userName" id="user_Name" placeholder="Your Name">
+                        <i class="fas fa-user"></i>
+                    </div>
+                
+                <div class="form-field user-email">
+                    <label for="userName" hidden >Email</label>
+                    <input type="email" name="userEmail" id="user_Email" placeholder="Your Email">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <textarea name="userMessage" id="user_message" placeholder="Type your meesage ..."></textarea>
+                <div class="form-checkbox">
+                    <input type="checkbox">
+                    <label for="formCheckbox">Send a copy to my Email</label>
+                </div>
+                <div class="form-button btn-large">
+                    <input type="submit" value="Send Email">
+                </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+   
+   <!-- column 2 -->
+   <div class="main-column-2">
+       <!-- sign in form -->
+        <div class="box box-3">
+            <h1 class="form-title">Sign In form</h1>
+            <div class="form-wrapper-outline">
+                <div class="form-wrapper">
+                    <div class="form-field user-name">
+                        <label for="userName" hidden >User name</label>
+                        <input type="text" name="userName" id="user_Name" placeholder="User Name">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    
+                    <div class="form-field user-password">
+                            <label for="userName" hidden >Password</label>
+                            <input type="password" name="password" id="user_password" placeholder="Password" required>
+                            <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="field-wrapper flex-container sign-in-btns">
+                        <div class="form-checkbox">
+                            <input type="checkbox">
+                            <label for="formCheckbox">Remember Me</label>
+                        </div>
+                        <div class="form-button btn-medium">
+                            <input type="submit" value="Sign in">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        </div>
+        <!-- recover form -->
+        <div class="box box-4">
+            <h1 class="form-title">recover form</h1>
+            <div class="form-wrapper-outline">
+                <div class="form-wrapper">
+                    <div class="form-field user-email">
+                        <label for="userName" hidden >Email</label>
+                        <input type="email" name="userEmail" id="user_Email" placeholder="Enter Your Email">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-field user-email">
+                        <label for="userName" hidden >Email</label>
+                        <input type="tel" name="userEmail" id="user_Email" placeholder="Enter Your Phone Number">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="field-wrapper flex-container recovery-btns">
+                        <div class="form-button btn-small">
+                            <input type="submit" value="Send">
+                        </div>
+                        <div class="form-button btn-small">
+                            <input type="submit" value="Done">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- subscribe form -->
+        <div class="box box-5">
+            <h1 class="form-title">subscribe form</h1>
+            <div class="form-wrapper-outline">
+                <div class="form-wrapper">
+                    <div class="form-field user-email">
+                        <label for="userName" hidden >Email</label>
+                        <input type="email" name="userEmail" id="user_Email" placeholder="Enter Your Email">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="field-wrapper flex-container sub-btns">
+                        <div class="form-button btn-small">
+                            <input type="submit" value="Subscribe">
+                        </div>
+                        <div class="form-button small-red">
+                            <input type="submit" value="No, Thanks">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="small-logo" src="img/smallLogo.png" alt="small logo">
+    </div>
+    </div>
+</div>
+</body>
+</html>
