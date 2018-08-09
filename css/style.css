@@ -370,4 +370,7 @@ input[type=checkbox]{
         .user-phone i {
             opacity: 0;
         }
-    }
+
+        .user-location i{
+            opacity: 0;
+        }
