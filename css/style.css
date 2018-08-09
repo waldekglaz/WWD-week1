@@ -87,11 +87,15 @@ body{
 }
 .btn-large input:hover,
 .btn-medium input:hover,
-.btn-small input:hover{
+.btn-small input:hover,
+.btn-large input:focus,
+.btn-medium input:focus,
+.btn-small input:focus{
     background-color: #a4e13c;
 }
 
-.small-red input:hover{
+.small-red input:hover,
+.small-red input:focus{
     background-color: #e3384a;
 }
 
@@ -388,3 +392,4 @@ input[type=checkbox]{
         .user-location i{
             opacity: 0;
         }
+    }
