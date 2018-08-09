@@ -36,6 +36,7 @@ body{
     box-sizing: border-box;
     box-shadow: 0px 1px 0px 0px #ffffff;
 }
+
 .btn-large input{
     border-color:  #3b9a00;
     background-color:  #93d02b;
@@ -79,6 +80,19 @@ body{
     height: 41px;
     color: #fff;
     font-size: 18px;
+}
+
+.form-button input:hover{
+    cursor: pointer;
+}
+.btn-large input:hover,
+.btn-medium input:hover,
+.btn-small input:hover{
+    background-color: #a4e13c;
+}
+
+.small-red input:hover{
+    background-color: #e3384a;
 }
 
 /*
