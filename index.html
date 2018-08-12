@@ -21,9 +21,10 @@
             <h1 class="form-title">register form</h1>
             <div class="form-wrapper-outline">
                 <div class="form-wrapper">
+                    <form action="">
                     <div class="form-field user-name">
                         <!-- <label for="userName" hidden >User name</label> -->
-                        <input type="text" name="userName" id="user_Name" placeholder="Username">
+                        <input type="text" name="userName" id="user_Name" placeholder="Username" required>
                         <i class="fas fa-user"></i>
                     </div>
                 <div class="form-field user-password">
@@ -38,7 +39,7 @@
                 </div>
                 <div class="form-field user-email">
                     <!-- <label for="userName" hidden >Email</label> -->
-                    <input type="email" name="userEmail" id="user_Email" placeholder="Email">
+                    <input type="email" name="userEmail" id="user_Email" placeholder="Email" required>
                     <i class="fas fa-envelope"></i>
                 </div>
                 <div class="form-field user-location">
@@ -66,6 +67,7 @@
                 <div class="form-button btn-large">
                     <input type="submit" value="Sign Up">
                 </div>
+            </form>
                 </div>
             </div>
        </div>
@@ -74,25 +76,27 @@
             <h1 class="form-title">Send Email</h1>
             <div class="form-wrapper-outline">
                 <div class="form-wrapper">
-                    <div class="form-field user-name">
+                    <form action="">
+                        <div class="form-field user-name">
                         <!-- <label for="userName" hidden >User name</label> -->
-                        <input type="text" name="userName" id="user_Name1" placeholder="Your Name">
-                        <i class="fas fa-user"></i>
-                    </div>
+                            <input type="text" name="userName" id="user_Name1" placeholder="Your Name" required>
+                            <i class="fas fa-user"></i>
+                        </div>
                 
-                <div class="form-field user-email">
-                    <!-- <label for="userName" hidden >Email</label> -->
-                    <input type="email" name="userEmail" id="user_Email1" placeholder="Your Email">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <textarea name="userMessage" id="user_message" placeholder="Type your message ..."></textarea>
-                <div class="form-checkbox">
-                    <input type="checkbox">
-                    <label for="formCheckbox1">Send a copy to my Email</label>
-                </div>
-                <div class="form-button btn-large">
-                    <input type="submit" value="Send Email">
-                </div>
+                         <div class="form-field user-email">
+                        <!-- <label for="userName" hidden >Email</label> -->
+                            <input type="email" name="userEmail" id="user_Email1" placeholder="Your Email" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <textarea name="userMessage" id="user_message" placeholder="Type your message ..."></textarea>
+                        <div class="form-checkbox">
+                            <input type="checkbox">
+                            <label for="formCheckbox1">Send a copy to my Email</label>
+                        </div>
+                            <div class="form-button btn-large">
+                            <input type="submit" value="Send Email">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>       
@@ -105,52 +109,56 @@
             <h1 class="form-title">Sign In form</h1>
             <div class="form-wrapper-outline">
                 <div class="form-wrapper">
-                    <div class="form-field user-name">
-                        <!-- <label for="userName" hidden >User name</label> -->
-                        <input type="text" name="userName" id="user_Name2" placeholder="User Name">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    
-                    <div class="form-field user-password">
-                            <!-- <label for="userName" hidden >Password</label> -->
-                            <input type="password" name="password" id="user_password2" placeholder="Password" required>
-                            <i class="fas fa-lock"></i>
-                    </div>
-                    <div class="field-wrapper flex-container sign-in-btns">
-                        <div class="form-checkbox">
-                            <input type="checkbox">
-                            <label for="formCheckbox2">Remember Me</label>
+                    <form action="">
+                        <div class="form-field user-name">
+                            <!-- <label for="userName" hidden >User name</label> -->
+                            <input type="text" name="userName" id="user_Name2" placeholder="User Name" required>
+                            <i class="fas fa-user"></i>
                         </div>
-                        <div class="form-button btn-medium">
-                            <input type="submit" value="Sign in">
+                        
+                        <div class="form-field user-password">
+                                <!-- <label for="userName" hidden >Password</label> -->
+                                <input type="password" name="password" id="user_password2" placeholder="Password" required>
+                                <i class="fas fa-lock"></i>
                         </div>
-                    </div>
-                    </div>
-                </div>
+                        <div class="field-wrapper flex-container sign-in-btns">
+                            <div class="form-checkbox">
+                                <input type="checkbox">
+                                <label for="formCheckbox2">Remember Me</label>
+                            </div>
+                            <div class="form-button btn-medium">
+                                <input type="submit" value="Sign in">
+                            </div>
+                        </div>
+                    </form>
+               </div>
+            </div>
         </div>
         <!-- recover form -->
         <div class="box box-4">
             <h1 class="form-title">recover form</h1>
             <div class="form-wrapper-outline">
                 <div class="form-wrapper">
-                    <div class="form-field user-email">
-                        <!-- <label for="userName" hidden >Email</label> -->
-                        <input type="email" name="userEmail" id="user_Email2" placeholder="Enter Your Email">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="form-field user-phone">
-                        <!-- <label for="userName" hidden >Email</label> -->
-                        <input type="tel" name="userEmail" id="user_Tel" placeholder="Enter Your Phone Number">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <div class="field-wrapper flex-container recovery-btns">
-                        <div class="form-button btn-small">
-                            <input type="submit" value="Send">
+                    <form action="">
+                        <div class="form-field user-email">
+                            <!-- <label for="userName" hidden >Email</label> -->
+                            <input type="email" name="userEmail" id="user_Email2" placeholder="Enter Your Email" required>
+                            <i class="fas fa-envelope"></i>
                         </div>
-                        <div class="form-button btn-small">
-                            <input type="submit" value="Done">
+                        <div class="form-field user-phone">
+                            <!-- <label for="userName" hidden >Email</label> -->
+                            <input type="tel" name="userEmail" id="user_Tel" placeholder="Enter Your Phone Number" required pattern="[0-9]">
+                            <i class="fas fa-mobile-alt"></i>
                         </div>
-                    </div>
+                        <div class="field-wrapper flex-container recovery-btns">
+                            <div class="form-button btn-small">
+                                <input type="submit" value="Send">
+                            </div>
+                            <div class="form-button btn-small">
+                                <input type="submit" value="Done">
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -160,19 +168,21 @@
             <h1 class="form-title">subscribe form</h1>
             <div class="form-wrapper-outline">
                 <div class="form-wrapper">
-                    <div class="form-field user-email">
-                        <!-- <label for="userName" hidden >Email</label> -->
-                        <input type="email" name="userEmail" id="user_Email3" placeholder="Enter Your Email">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="field-wrapper flex-container sub-btns">
-                        <div class="form-button btn-small">
-                            <input type="submit" value="Subscribe">
+                    <form action="">
+                        <div class="form-field user-email">
+                            <!-- <label for="userName" hidden >Email</label> -->
+                            <input type="email" name="userEmail" id="user_Email3" placeholder="Enter Your Email" required>
+                            <i class="fas fa-envelope"></i>
                         </div>
-                        <div class="form-button small-red">
-                            <input type="submit" value="No, Thanks">
+                        <div class="field-wrapper flex-container sub-btns">
+                            <div class="form-button btn-small">
+                                <input type="submit" value="Subscribe">
+                            </div>
+                            <div class="form-button small-red">
+                                <input type="submit" value="No, Thanks">
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
